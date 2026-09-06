@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Watchlist</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-screen" class="screen">
+    <div class="login-card">
+      <h1>Smart Watchlist</h1>
+      <p class="subtitle">Not just prices — what changed since you last looked.</p>
+      <input id="username-input" type="text" placeholder="Enter a username" autocomplete="off" />
+      <button id="login-btn">Continue</button>
+      <p class="hint">Same username on any device picks up where you left off.</p>
+    </div>
+  </div>
+
+  <div id="app-screen" class="screen hidden">
+    <header>
+      <h1>Smart Watchlist</h1>
+      <div class="header-right">
+        <span id="conn-status" class="pill pill-connecting">connecting…</span>
+        <span id="user-label"></span>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <select id="symbol-picker">
+        <option value="">Add a symbol…</option>
+      </select>
+      <button id="add-btn">Add</button>
+      <button id="ack-btn" class="secondary" title="Manually mark everything as 'seen' now">
+        Mark all as seen
+      </button>
+    </div>
+
+    <div id="watchlist" class="watchlist"></div>
+    <p id="empty-state" class="empty-state hidden">
+      Your watchlist is empty. Add a symbol above to get started.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
