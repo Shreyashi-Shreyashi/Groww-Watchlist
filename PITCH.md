@@ -1,4 +1,4 @@
-## Pitch (100 words)
+## Pitch 
 
 Most watchlists show today's price and call it done. Ours asks: what
 changed since you last looked? Each symbol gets a persisted baseline from
